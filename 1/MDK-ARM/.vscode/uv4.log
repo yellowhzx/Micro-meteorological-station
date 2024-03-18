@@ -1,0 +1,15 @@
+*** Using Compiler 'V5.05 update 1 (build 106)', folder: 'F:\Study\keil5\Keil_v5\ARM\ARMCC\Bin'
+Build target 'test'
+compiling main.c...
+../Core/Src/main.c(212): warning:  #1441-D: nonstandard cast on lvalue
+          (float)Bme.Alt=-(255-raw_data[22]);
+../Core/Src/main.c(216): warning:  #1441-D: nonstandard cast on lvalue
+          (float)Bme.Alt=(raw_data[21]<<8)|raw_data[22];
+../Core/Src/main.c(219): warning:  #181-D: argument is incompatible with corresponding format string conversion
+        g_uart3TxBufferLen=sprintf((char *)raw_data,"t10.txt=\"%.2f\"\xff\xff\xff",Bme.Lux/100);
+../Core/Src/main.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=16020 RO-data=352 RW-data=8036 ZI-data=1988  
+FromELF: creating hex file...
+"test\test.axf" - 0 Error(s), 3 Warning(s).
+Build Time Elapsed:  00:00:01

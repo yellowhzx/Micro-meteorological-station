@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>0.png</file>
+        <file>45.png</file>
+        <file>90.png</file>
+        <file>135.png</file>
+        <file>180.png</file>
+        <file>225.png</file>
+        <file>270.png</file>
+        <file>315.png</file>
+        <file>jinggao.png</file>
+    </qresource>
+</RCC>

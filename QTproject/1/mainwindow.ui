@@ -1,0 +1,1578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1069</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBoxUART">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>611</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>华文新魏</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>串口操作</string>
+    </property>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文新魏</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>气象信息串口：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBoxUart">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>50</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文新魏</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string>COM1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>COM2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>COM3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>COM4</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>COM5</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>50</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文新魏</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>波特率：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditBaudRate">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>50</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文新魏</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>9600</string>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Normal</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文新魏</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>bps</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonOpenUart">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>50</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文新魏</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>打开串口1</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>0</y>
+      <width>191</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>华文新魏</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>时间</string>
+    </property>
+    <widget class="QLabel" name="labelWeek">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>80</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Agency FB</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>星期日</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelCalendar">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>10</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Agency FB</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>2023-05-28</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelTime">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>40</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Agency FB</family>
+       <pointsize>26</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>00:00:00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>801</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>实时数据</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>801</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>华文新魏</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="title">
+       <string>气象信息</string>
+      </property>
+      <widget class="QLabel" name="label_30">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>150</y>
+         <width>21</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>℃</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelTemperature">
+       <property name="geometry">
+        <rect>
+         <x>87</x>
+         <y>150</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>150</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>温度：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelHumidity">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>150</y>
+         <width>31</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>150</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>湿度：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>150</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>%RH</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelWindDirectionIcon">
+       <property name="geometry">
+        <rect>
+         <x>720</x>
+         <y>170</y>
+         <width>21</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>北</string>
+       </property>
+      </widget>
+      <widget class="GaugeCompassPan" name="gaugeCompassPanWindDirectionIcon">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>10</y>
+         <width>161</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="bgColor">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+       <property name="textColor">
+        <color>
+         <red>50</red>
+         <green>50</green>
+         <blue>50</blue>
+        </color>
+       </property>
+       <property name="borderColor">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="northDotColor">
+        <color>
+         <red>255</red>
+         <green>107</green>
+         <blue>107</blue>
+        </color>
+       </property>
+       <property name="otherDotColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="pointerColor">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>170</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>风向：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_34">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>150</y>
+         <width>31</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>m/s</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>150</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>风速：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelWindSpeed">
+       <property name="geometry">
+        <rect>
+         <x>497</x>
+         <y>150</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="GaugeSimple" name="gaugeSimpleTemperature">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>171</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhNone</set>
+       </property>
+       <property name="maxValue">
+        <double>50.000000000000000</double>
+       </property>
+      </widget>
+      <widget class="GaugeSimple" name="gaugeSimpleHumidity">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>20</y>
+         <width>171</width>
+         <height>141</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="GaugeSimple" name="gaugeSimpleWindSpeed">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>20</y>
+         <width>171</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="maxValue">
+        <double>50.000000000000000</double>
+       </property>
+      </widget>
+      <widget class="NavLabel" name="navLabel">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>170</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>光照度：               lux</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="showArrow">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="NavLabel" name="navLabelIllumination">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>170</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>0000.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="showArrow">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="NavLabel" name="navLabel_4">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>170</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>气压：             kPa</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="showArrow">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="NavLabel" name="navLabelPressure">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>170</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>000.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="showArrow">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="NavLabel" name="navLabel_7">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>170</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>海拔：          m</string>
+       </property>
+       <property name="background">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="showArrow">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="NavLabel" name="navLabelAltitude">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>170</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0000</string>
+       </property>
+       <property name="background">
+        <color>
+         <red>100</red>
+         <green>100</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="showArrow">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <zorder>gaugeSimpleWindSpeed</zorder>
+      <zorder>gaugeCompassPanWindDirectionIcon</zorder>
+      <zorder>gaugeSimpleHumidity</zorder>
+      <zorder>gaugeSimpleTemperature</zorder>
+      <zorder>label_30</zorder>
+      <zorder>labelTemperature</zorder>
+      <zorder>label_3</zorder>
+      <zorder>labelHumidity</zorder>
+      <zorder>label_6</zorder>
+      <zorder>label_25</zorder>
+      <zorder>labelWindDirectionIcon</zorder>
+      <zorder>label_11</zorder>
+      <zorder>label_34</zorder>
+      <zorder>label_22</zorder>
+      <zorder>labelWindSpeed</zorder>
+      <zorder>navLabel</zorder>
+      <zorder>navLabelIllumination</zorder>
+      <zorder>navLabel_4</zorder>
+      <zorder>navLabelPressure</zorder>
+      <zorder>navLabel_7</zorder>
+      <zorder>navLabelAltitude</zorder>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxAlarm">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>200</y>
+        <width>511</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>华文新魏</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="tabletTracking">
+       <bool>false</bool>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="title">
+       <string>报警控制</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>风速上限</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>温度上限</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_23">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>光照度上限</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>30</y>
+         <width>31</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>m/s</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>60</y>
+         <width>31</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>℃</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>90</y>
+         <width>31</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>lux</string>
+       </property>
+      </widget>
+      <widget class="LightPoint" name="lightPoint">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>20</y>
+         <width>91</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="step">
+        <number>0</number>
+       </property>
+       <property name="bgColor">
+        <color alpha="0">
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="XSlider" name="xsliderWindSpeedLimit">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>211</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>50</number>
+       </property>
+       <property name="sliderHeight">
+        <number>13</number>
+       </property>
+       <property name="normalColor">
+        <color>
+         <red>80</red>
+         <green>80</green>
+         <blue>80</blue>
+        </color>
+       </property>
+       <property name="grooveColor">
+        <color>
+         <red>70</red>
+         <green>70</green>
+         <blue>70</blue>
+        </color>
+       </property>
+       <property name="handleBorderColor">
+        <color>
+         <red>60</red>
+         <green>60</green>
+         <blue>60</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="XSlider" name="xsliderTemperatureLimit">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>50</y>
+         <width>211</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>50</number>
+       </property>
+       <property name="sliderHeight">
+        <number>13</number>
+       </property>
+       <property name="normalColor">
+        <color>
+         <red>80</red>
+         <green>80</green>
+         <blue>80</blue>
+        </color>
+       </property>
+       <property name="grooveColor">
+        <color>
+         <red>70</red>
+         <green>70</green>
+         <blue>70</blue>
+        </color>
+       </property>
+       <property name="handleBorderColor">
+        <color>
+         <red>60</red>
+         <green>60</green>
+         <blue>60</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="XSlider" name="xsliderIlluminationLimit">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>80</y>
+         <width>211</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="sliderHeight">
+        <number>13</number>
+       </property>
+       <property name="normalColor">
+        <color>
+         <red>80</red>
+         <green>80</green>
+         <blue>80</blue>
+        </color>
+       </property>
+       <property name="grooveColor">
+        <color>
+         <red>70</red>
+         <green>70</green>
+         <blue>70</blue>
+        </color>
+       </property>
+       <property name="handleBorderColor">
+        <color>
+         <red>60</red>
+         <green>60</green>
+         <blue>60</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="ImageSwitch" name="imageSwitchAlarm">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>0</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="isChecked" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="buttonStyle">
+        <enum>ImageSwitch::ButtonStyle_2</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxUART_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>320</y>
+        <width>801</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>华文新魏</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="title">
+       <string>日志</string>
+      </property>
+      <widget class="QTextEdit" name="textEditLog">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>721</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonClearLog">
+       <property name="geometry">
+        <rect>
+         <x>720</x>
+         <y>20</y>
+         <width>71</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>清空</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxMode">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>200</y>
+        <width>291</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>华文新魏</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="title">
+       <string>工作模式</string>
+      </property>
+      <widget class="QRadioButton" name="radioButtonManualMode">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>手动采集模式</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButtonAutoMode">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>自动采集模式</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonGetInputData">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>90</y>
+         <width>121</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>输入模拟数据</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonGetRandomData">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>60</y>
+         <width>121</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>生成模拟数据</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonGetHardwareData">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>30</y>
+         <width>121</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文新魏</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>读取测量数据</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab2">
+     <attribute name="title">
+      <string>历史数据</string>
+     </attribute>
+     <widget class="WaveChart" name="waveChartTemperature">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>401</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="maxValue">
+       <double>50.000000000000000</double>
+      </property>
+      <property name="xStep">
+       <double>5.000000000000000</double>
+      </property>
+      <property name="title">
+       <string>温度()</string>
+      </property>
+      <property name="bgColorStart">
+       <color>
+        <red>235</red>
+        <green>235</green>
+        <blue>235</blue>
+       </color>
+      </property>
+      <property name="bgColorEnd">
+       <color>
+        <red>225</red>
+        <green>225</green>
+        <blue>225</blue>
+       </color>
+      </property>
+      <property name="textColor">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="WaveChart" name="waveChartWindSpeed">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>210</y>
+        <width>401</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="maxValue">
+       <double>50.000000000000000</double>
+      </property>
+      <property name="xStep">
+       <double>5.000000000000000</double>
+      </property>
+      <property name="title">
+       <string>风速()</string>
+      </property>
+      <property name="bgColorStart">
+       <color>
+        <red>235</red>
+        <green>235</green>
+        <blue>235</blue>
+       </color>
+      </property>
+      <property name="bgColorEnd">
+       <color>
+        <red>225</red>
+        <green>225</green>
+        <blue>225</blue>
+       </color>
+      </property>
+      <property name="textColor">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="WaveChart" name="waveChartHumidity">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>0</y>
+        <width>401</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>湿度()</string>
+      </property>
+      <property name="bgColorStart">
+       <color>
+        <red>235</red>
+        <green>235</green>
+        <blue>235</blue>
+       </color>
+      </property>
+      <property name="bgColorEnd">
+       <color>
+        <red>225</red>
+        <green>225</green>
+        <blue>225</blue>
+       </color>
+      </property>
+      <property name="textColor">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="WaveChart" name="waveChartIllumination">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>210</y>
+        <width>401</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="maxValue">
+       <double>30.000000000000000</double>
+      </property>
+      <property name="xStep">
+       <double>3.000000000000000</double>
+      </property>
+      <property name="title">
+       <string>光照度()</string>
+      </property>
+      <property name="bgColorStart">
+       <color>
+        <red>235</red>
+        <green>235</green>
+        <blue>235</blue>
+       </color>
+      </property>
+      <property name="bgColorEnd">
+       <color>
+        <red>225</red>
+        <green>225</green>
+        <blue>225</blue>
+       </color>
+      </property>
+      <property name="textColor">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1069</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件(F)</string>
+    </property>
+    <addaction name="readINIFile"/>
+    <addaction name="writeINIFile"/>
+    <addaction name="separator"/>
+    <addaction name="menuClose"/>
+   </widget>
+   <widget class="QMenu" name="menu_D">
+    <property name="title">
+     <string>数据(D)</string>
+    </property>
+    <addaction name="menuGetHardwareData"/>
+    <addaction name="menuGetRandomData"/>
+    <addaction name="menuGetInputData"/>
+   </widget>
+   <widget class="QMenu" name="menu_A">
+    <property name="title">
+     <string>关于(A)</string>
+    </property>
+    <addaction name="menuAbout"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_D"/>
+   <addaction name="menu_A"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="readINIFile">
+   <property name="text">
+    <string>读取配置文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="writeINIFile">
+   <property name="text">
+    <string>保存配置文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="menuClose">
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="menuGetRandomData">
+   <property name="text">
+    <string>生成模拟数据</string>
+   </property>
+   <property name="shortcut">
+    <string>W</string>
+   </property>
+  </action>
+  <action name="menuGetInputData">
+   <property name="text">
+    <string>输入模拟数据</string>
+   </property>
+   <property name="shortcut">
+    <string>E</string>
+   </property>
+  </action>
+  <action name="menuGetHardwareData">
+   <property name="text">
+    <string>读取测量数据</string>
+   </property>
+   <property name="shortcut">
+    <string>Q</string>
+   </property>
+  </action>
+  <action name="menuAbout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GaugeCompassPan</class>
+   <extends>QWidget</extends>
+   <header>gaugecompasspan.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GaugeSimple</class>
+   <extends>QWidget</extends>
+   <header>gaugesimple.h</header>
+  </customwidget>
+  <customwidget>
+   <class>LightPoint</class>
+   <extends>QWidget</extends>
+   <header>lightpoint.h</header>
+  </customwidget>
+  <customwidget>
+   <class>NavLabel</class>
+   <extends>QLabel</extends>
+   <header>navlabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>WaveChart</class>
+   <extends>QWidget</extends>
+   <header>wavechart.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ImageSwitch</class>
+   <extends>QWidget</extends>
+   <header>imageswitch.h</header>
+  </customwidget>
+  <customwidget>
+   <class>XSlider</class>
+   <extends>QSlider</extends>
+   <header>xslider.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
